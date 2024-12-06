@@ -416,6 +416,7 @@ input{
     margin:0px;
    }
 }
+/*Rozlišení pro tablet*/
 @media (min-width:425px){
     body{
         font-size: 0.6em;
