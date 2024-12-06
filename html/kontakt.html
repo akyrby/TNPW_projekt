@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/stylopis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.hlavicka ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <title>Kontakt</title>
+    <link rel="icon" href="../obrazky/camera.png">
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="logo">
+            <img src="../obrazky/camera.png" alt="Logo">
+        </div>
+        <div class="nazevStranky">Matěj Sobotka</div>
+        <nav class="hlavicka">
+            <ul class="navMobil">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="objednat.html">Objednat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="main-hlavni">
+        <h2>Kontakt</h2>
+        <p>Máte zájem o spolupráci, focení nebo jen otázku? Neváhejte se mi ozvat! Rád se s vámi domluvím na podrobnostech a pomohu zachytit přesně to, co potřebujete</p>
+        <div class="celekKontakt">
+            <div class="odsazeni">
+                <h3>Kontaktní formulář</h3>
+                <form action="post" class="formKontakt">
+                    <label for="jmeno">Jmeno</label><br>
+                    <input type="text" name="jmeno" id="jmeno"><br>
+                    <label for="prijmeni">Příjmení</label><br>
+                    <input type="text" name="prijmeni" id="prijmeni"><br>
+                    <label for="mail">E-mail</label><br>
+                    <input type="email" name="mail" id="mail"><br>
+                    <label for="dotaz">Dotaz</label><br>
+                    <textarea name="dotaz" id="dotaz" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="Odeslat">
+                </form>
+            </div>
+                <img src="../obrazky/DSC03362.jpg" alt="fotka Matěje" class="obrazekJa">
+                <table class="tabulkaMobil" >
+                    <tr>
+                        <th>Kontaktní informace</th>
+                    </tr>
+
+                    <tr>
+                        <td>Jméno: Matěj Sobotka</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            E-mail: photo@matejsobotka.cz
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Instagram: <a href="https://www.instagram.com/mathewsphotopov/" target="_blank">@mathewsphotopov</a>
+                        </td>
+                    </tr>
+
+                </table>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footerText">
+            <p>&copy; 2024<br>Matěj Sobotka.<br>Všechna práva vyhrazena.</p>
+        </div>
+        <div>
+            <p>Tato stránka je projekt na předmět TNPW</p>
+        </div>
+        <div class="footerKontakt">
+            <ul>
+                <li><a href="https://www.instagram.com/mathewsphotopov/" target="_blank">Instagram</a></li>
+                <li>photo@matejsobotka.cz</li>
+                <li>+420 123 456 789</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

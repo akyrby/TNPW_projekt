@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/stylopis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.hlavicka ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+    
+    <title>Portfolio</title>
+    <link rel="icon" href="../obrazky/camera.png">
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="logo">
+            <img src="../obrazky/camera.png" alt="Logo">
+        </div>
+        <div class="nazevStranky">Matěj Sobotka</div>
+        <nav class="hlavicka">
+            <ul class="navMobil">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="objednat.html">Objednat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <div class="grid-kontejner">
+            <img src="../obrazky/portfolio/cervenyDestnik.jpg" alt="Osoba s červeným deštníkem">
+            <img src="../obrazky/portfolio/odrazVMetru.jpg" alt="Odraz v metru">
+            <img src="../obrazky/portfolio/sediciOsoba.jpg" alt="sedící osoba">
+
+            <img src="../obrazky/portfolio/auto.jpg" alt="auto">
+            <img src="../obrazky/portfolio/cisnici.jpg" alt="čičníci">
+            
+            
+            
+            <img src="../obrazky/portfolio/zapadSlunce.jpg" alt="Západ slunce">
+            <img src="../obrazky/portfolio/zamek.jpg" alt="zamek">
+            <img src="../obrazky/portfolio/mesic.jpg" alt="měsíc">
+            <img src="../obrazky/portfolio/moto.jpg" alt="motorka">
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footerText">
+            <p>&copy; 2024<br>Matěj Sobotka.<br>Všechna práva vyhrazena.</p>
+        </div>
+        <div>
+            <p>Tato stránka je projekt na předmět TNPW</p>
+        </div>
+        <div class="footerKontakt">
+            <ul>
+                <li><a href="https://www.instagram.com/mathewsphotopov/" target="_blank">Instagram</a></li>
+                <li>photo@matejsobotka.cz</li>
+                <li>+420 123 456 789</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

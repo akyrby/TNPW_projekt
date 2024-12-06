@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/stylopis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.hlavicka ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <title>Portrétní, Street, Rodinné foto</title>
+    <link rel="icon" href="../obrazky/camera.png">
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="logo">
+            <img src="../obrazky/camera.png" alt="Logo">
+        </div>
+        <div class="nazevStranky">Matěj Sobotka</div>
+        <nav class="hlavicka">
+            <ul class="navMobil">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="objednat.html">Objednat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="main-hlavni">
+        <h1>Zachyťte svou jedinečnost skrze objektiv</h1>
+        <p class="stredText">Každý okamžik, úsměv a detail si zaslouží být zachycen. Pomůžeme vám vytvořit fotografie, které nejen vypráví váš příběh, ale i podtrhnou vaši jedinečnost. Ať už hledáte profesionální portrét, svatební vzpomínky nebo momenty z každodenního života, jsme tu pro vás.</p>
+    </main>
+    
+    <footer>
+        <div class="footerText">
+            <p>&copy; 2024 <br>Matěj Sobotka.<br>Všechna práva vyhrazena.</p>
+        </div>
+        <div>
+            <p>Tato stránka je projekt na předmět TNPW</p>
+        </div>
+        <div class="footerKontakt">
+            <ul>
+                <li><a href="https://www.instagram.com/mathewsphotopov/" target="_blank">Instagram</a></li>
+                <li>photo@matejsobotka.cz</li>
+                <li>+420 123 456 789</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

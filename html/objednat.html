@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/stylopis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.hlavicka ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <title>Objednat</title>
+    <link rel="icon" href="../obrazky/camera.png">
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="logo">
+            <img src="../obrazky/camera.png" alt="Logo">
+        </div>
+        <div class="nazevStranky">Matěj Sobotka</div>
+        <nav class="hlavicka">
+            <ul class="navMobil">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="objednat.html">Objednat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="main podSebe">
+        <div class="ObjForm">
+            <h2>Objednávkový formulář</h2>
+            <form action="#" method="post" class="formular">
+                <label for="jmeno">Jméno:</label><br>
+                <input type="text" name="jmeno" id="jmeno" placeholder="Petr" required><br>
+                <label for="prijmeni">Příjmení:</label><br>
+                <input type="text" name="prijmeni" id="prijmeni" placeholder="Novák" required><br>
+                <label for="mail">E-mail</label><br>
+                <input type="email" name="mail" id="mail" placeholder="mail@mail.com" required><br>
+                <label for="tel">Telefon</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="123456789" required><br>
+                <label for="sluzby">Služba</label> <br>
+                <select name="sluzby" id="sluzby" required>
+                    <option value="nevybrano">Nevybráno</option>
+                    <option value="street">Street</option>
+                    <option value="Portretni">Portrétní</option>¨
+                    <option value="rodinne">Rodinné</option>
+                    <option value="Individualni">Individualní</option>
+                </select> <br>
+                <label for="informace" class="mensiLabel">Chcete dostávat novinky do schránky ?</label><br>
+                <input type="checkbox" name="informace" id="informace" checked><br>
+                <label for="osobInf" class="mensiLabel">Souhlasítě se zpracováním osobních dat ?</label><br>
+                <input type="checkbox" name="osobInf" id="osobInf" required><br>
+                <input type="submit">
+            </form>
+        </div>
+       
+
+        <div class="cenik">
+            <h2>Ceník</h2>
+            <table class="tabulkaObjednat">
+                <thead>
+                  <tr>
+                    <th>Typ focení</th>
+                    <th>Doba trvání</th>
+                    <th>Počet fotografií</th>
+                    <th>Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Street focení</td>
+                    <td>1 hodina</td>
+                    <td>10 upravených fotek</td>
+                    <td>1 500 Kč</td>
+                  </tr>
+                  <tr>
+                    <td>Portrétní focení</td>
+                    <td>2 hodiny</td>
+                    <td>15 upravených fotek</td>
+                    <td>2 500 Kč</td>
+                  </tr>
+                  <tr>
+                    <td>Rodinné focení</td>
+                    <td>2 hodiny</td>
+                    <td>20 upravených fotek</td>
+                    <td>3 000 Kč</td>
+                  </tr>
+                  <tr>
+                    <td>Individuální zakázka</td>
+                    <td>Dle domluvy</td>
+                    <td>Dle domluvy</td>
+                    <td>Cena na vyžádání</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+    </main>
+
+    <footer class="objednatFooter">
+        <div class="footerText">
+            <p>&copy; 2024<br>Matěj Sobotka.<br>Všechna práva vyhrazena.</p>
+        </div>
+        <div>
+            <p>Tato stránka je projekt na předmět TNPW</p>
+        </div>
+        <div class="footerKontakt">
+            <ul>
+                <li><a href="https://www.instagram.com/mathewsphotopov/" target="_blank">Instagram</a></li>
+                <li>photo@matejsobotka.cz</li>
+                <li>+420 123 456 789</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

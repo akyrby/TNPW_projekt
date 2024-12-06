@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylopis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.hlavicka ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <title>O mně</title>
+    <link rel="icon" href="../obrazky/camera.png">
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="logo">
+            <img src="../obrazky/camera.png" alt="Logo">
+        </div>
+        <div class="nazevStranky">Matěj Sobotka</div>
+        <nav class="hlavicka">
+            <ul class="navMobil">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="objednat.html">Objednat</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+
+
+
+    <main class="main">
+        <div class="obrazekJa">
+            <img src="../obrazky/IMG_1055.JPG" alt="">
+        </div>
+
+
+        <div class="oMne">
+            <h2>Matěj Sobotka</h2>
+            <p >Ahoj! Jmenuji se Mathew a jsem fotograf, který se specializuje na zachycování okamžiků ze života, zejména prostřednictvím street fotografie. Baví mě hledat krásu a příběhy v každodenních situacích, ať už jde o živé ulice města, tiché zákoutí nebo náhodné setkání.</p>
+            <p>I když se věnuji fotografii teprve rok, každý den je pro mě příležitostí se učit, zlepšovat a tvořit. Fotím cokoliv, co mě inspiruje nebo co přináší výzvu – rád zachytím i vaše důležité momenty a pomohu vám uchovat vzpomínky na celý život.</p>
+            <div class="obrazekJaMobil"><img src="../obrazky/IMG_1055.JPG" alt=""></div>
+            <p>Miluji cestování, a proto za vámi rád dorazím, kamkoliv bude potřeba. Fotografie není jen o místě, ale o emocích, atmosféře a příbězích, které společně vytvoříme.</p>
+            <p>Pokud hledáte fotografa, který miluje přirozené a autentické momenty, neváhejte mě kontaktovat! Najdete mě na Instagramu nebo mi napište e-mail <a href="kontakt.html">zde</a></p>
+            <p>Budu se těšit na spolupráci! <br>Mathew</p>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footerText">
+            <p>&copy; 2024<br>Matěj Sobotka.<br>Všechna práva vyhrazena.</p>
+        </div>
+        <div>
+            <p>Tato stránka je projekt na předmět TNPW</p>
+        </div>
+        <div class="footerKontakt">
+            <ul>
+                <li><a href="https://www.instagram.com/mathewsphotopov/" target="_blank">Instagram</a></li>
+                <li>photo@matejsobotka.cz</li>
+                <li>+420 123 456 789</li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
